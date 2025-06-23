@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* client/src/index.css */
+@media print {
+    .no-print {
+      display: none !important;
+    }
+    /* Add any other print-specific styles here */
+    .printable-content {
+      box-shadow: none !important; /* Remove shadow in print */
+      border: none !important; /* Remove border in print */
+      padding: 0 !important; /* Adjust padding for print */
+    }
+  }
+.input {
+    @apply border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition;
+  }
+  
+  .btn-secondary {
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition;
+  }
+  
+  .btn-purple {
+    @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition;
+  }
+  
